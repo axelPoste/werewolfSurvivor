@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://bo7g7oyid61gc" path="res://gun.tscn" id="3_xdddr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qwjxh"]
-radius = 29.0
+radius = 31.5271
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h50it"]
-radius = 44.0114
+radius = 36.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcoga"]
 bg_color = Color(0.152941, 0.168627, 0.188235, 1)
@@ -31,6 +31,7 @@ script = ExtResource("1_gclig")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.015, 1.015)
 shape = SubResource("CircleShape2D_qwjxh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -48,6 +49,7 @@ shape = SubResource("CircleShape2D_h50it")
 debug_color = Color(1, 0, 0, 0.419608)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -61,5 +63,5 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_vcoga")
 theme_override_styles/fill = SubResource("StyleBoxFlat_6eyw6")
-value = 14.33
+value = 100.0
 show_percentage = false
